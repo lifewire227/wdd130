@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=YourChosenFont&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
     --primary-color: #376fa7; /* Navy blue */
@@ -9,8 +9,7 @@
 
 }
 
-
-  --heading-font: 'Times New Roman', serif;
+ --heading-font: 'Times New Roman', serif;
   --paragraph-font: 'Arial', serif;
 
   --nav-background-color: #FFFFFF; /* White */
