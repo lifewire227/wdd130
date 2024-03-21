@@ -15,14 +15,21 @@
 
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex; /* Use flexbox to horizontally align items */
+    justify-content: space-evenly; /* Distribute space evenly between items */
+    align-items: center; /* Vertically center items */
 }
 
 nav a {
-    color: white;
-    display: block;
-    padding: 20px;
+    display: block; /* Display anchor elements as blocks */
+    padding: 0.5rem; /* Add padding around each anchor element */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff; /* Set text color to white */
 }
+
 
 h1 {
     color: steelblue;
@@ -41,14 +48,29 @@ p {
     padding: 0;
 }
 
+header, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
 main {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 1rem;
+    grid-column: 2/3;
 }
 
 aside {
     position: relative; /* this relative positioning is Needed for absolute positioning */
-    width: 20em;
+    width: 20rem;
     margin: 20px;
     border: 1px solid #ccc;
     padding: 10px;
@@ -56,6 +78,9 @@ aside {
     color: #333;
     text-align: center;
     position:relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
 }
 
 aside img {
