@@ -1,83 +1,73 @@
-/* rafting.css */
-
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-/* Define CSS variables */
-:root {
-    --primary-color: #376fa7; /* Navy blue */
-    --secondary-color: #ae8b58; /* Taupe or sandy brown */
-    --accent1-color: #ffffff; /* Olive brown or military green */
-    --accent2-color: #524536; /* Mint or pale aqua */
-    --accent3-color: #000000; /* Mint or pale aqua */
-
-
-    --heading-font: 'Times New Roman', serif;
-    --paragraph-font: 'Arial', serif;
-
-    --nav-background-color: #FFFFFF; /* White */
-    --nav-link-color: #333333; /* Dark gray */
-    --nav-hover-link-color: #0077CC; /* Blue */
-    --nav-hover-background-color: #EAEAEA; /* Light gray */
+/* CSS Grid for the header */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--nav-background-color);
 }
 
-/* Styling headings and paragraph elements */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color);
-    font-family: var(--heading-font);
-}
-
-p {
-    color: var(--accent1-color);
-    font-family: var(--paragraph-font);
-}
-
-/* Removing underlines from social media links */
-.social-media-links {
-    text-decoration: none;
-}
-
-/* Limiting the entire width of the page */
-body {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Styling the hero section */
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
+/* Styling the logo */
+header img {
+    width: 100px;
     height: auto;
 }
 
-/* Positioning the h1 heading and the article */
-.hero h1 {
-    position: absolute;
-    top: 50px;
-    right: 150px;
-    color: #FFFFFF;
-}   
-
-.hero article {
-    position: absolute;
-    top: 150px;
-    left: 20px;
-    right: 20px;
-    float: none;
-    background-color: #376fa7;
-    color: white;
-    
+/* CSS Flex for navigation */
+nav {
+    display: flex;
+    justify-content: flex-end;
 }
 
-/* Float img inside article to the right */
-.hero article img {
-    float: right;
-    width: 150px;
-    height: 100px;
+nav a {
+    margin-left: 20px;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    text-decoration: underline;
+}
+
+/* Styling the History section */
+.history {
+    padding: 20px;
+    background-color: #f7f7f7; /* Light gray background color */
+    border-radius: 10px; /* Rounded corners for visual appeal */
+    margin-bottom: 20px; /* Add some spacing between sections */
+}
+
+.history h2 {
+    color: var(--primary-color); /* Use primary color for heading */
+    font-family: var(--heading-font);
+    margin-bottom: 10px; /* Add spacing below the heading */
+}
+
+.history p {
+    color: var(--accent1-color); /* Use accent color for paragraph */
+    font-family: var(--paragraph-font);
+}
+
+/* Styling the Adventure section */
+.adventure-images {
+    display: flex;
+    overflow-x: auto;
+}
+
+.adventure-images figure {
+    margin-right: 20px; /* Add spacing between images */
+}
+
+.adventure-images img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.adventure-images figcaption {
+    margin-top: 10px; /* Add spacing above captions */
+    font-style: italic; /* Italics for captions */
 }
 
 /* Styling the footer */
@@ -86,28 +76,16 @@ footer {
     color: white; /* Set text color to contrast with the background */
     padding: 20px; /* Add some padding for better visual appearance */
     display: flex; /* Use flexbox layout */
-    justify-content: space-between; /* Space out the elements in the footer */
+    justify-content: flex-end; /* Align items to the right */
     align-items: center; /* Align items vertically */
 }
 
-/* Aligning the paragraph in the footer */
-footer p {
-    margin: 0; /* Reset margin */
-}
-
-/* Aligning the social links in the footer */
-footer .sociallinks {
-    display: flex; /* Use flexbox layout for social links */
-}
-
-/* Aligning each social media icon */
+/* Styling the social media icons */
 footer .sociallinks a {
     margin-left: 10px; /* Add some spacing between social links */
 }
 
-/* Styling the social media icons */
 footer .sociallinks img {
     width: 30px; /* Set the width of social media icons */
     height: 30px; /* Set the height of social media icons */
 }
-
