@@ -68,6 +68,7 @@ nav a:hover {
 
 /* Styling the History section */
 .history {
+    position: relative;
     padding: 20px;
     background-color: #f7f7f7; /* Light gray background color */
     border-radius: 10px; /* Rounded corners for visual appeal */
@@ -80,10 +81,30 @@ nav a:hover {
     margin-bottom: 10px; /* Add spacing below the heading */
 }
 
+
+.history img {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    top: 50%;
+    width: 100px;
+    height: 75px;
+    vertical-align: middle;
+    position: absolute; 
+    right: 50%; 
+    margin: 0 auto;
+}
+
+
 .history p {
+    display: inline-block;
+    vertical-align: middle;
     color: var(--accent1-color); /* Use accent color for paragraph */
     font-family: var(--paragraph-font);
+    text-align: left; /* Align paragraph text to the left */
+    clear: both;
 }
+
 
 /* Styling the Adventure section */
 .adventure-images {
