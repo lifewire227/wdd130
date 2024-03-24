@@ -16,7 +16,8 @@ header img {
 /* CSS Flex for navigation */
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    margin-left: auto;
 }
 
 nav a {
@@ -29,6 +30,40 @@ nav a {
 nav a:hover {
     color: var(--nav-hover-link-color);
     text-decoration: underline;
+}
+
+/* Styling the hero section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    color: #FFFFFF;
+}
+
+.hero article {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    right: 20px;
+    background-color: #376fa7;
+    color: white;
+    padding: 20px;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    height: 100px;
 }
 
 /* Styling the History section */
