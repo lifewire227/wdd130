@@ -61,6 +61,7 @@ fieldset {
   margin: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;}
+  
   /* Style form elements */
   input[type="text"],
   textarea,
@@ -68,20 +69,43 @@ fieldset {
   input[type="number"],
   button {
     margin-bottom: 10px;
-
     width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #ccc; /* Add border for better distinction */
+    border-radius: 4px;
   }
   
   textarea {
     resize: vertical; /* Allow vertical resizing */
   }
   
+  /* Focus state for form elements */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none; /* Remove default outline */
+    border-color: navy; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Add box shadow on focus */
+}
+
+/* Style labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
  
+ /* Style select dropdown arrow */
+select {
+  appearance: none; /* Remove default appearance */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23333"><path d="M7 10l5 5 5-5H7z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Add custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  padding-right: 25px; /* Adjust padding for arrow */
+} 
   
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+
   
   /* Responsive styles */
   @media (min-width: 768px) {
