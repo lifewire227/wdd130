@@ -81,30 +81,19 @@ nav a:hover {
     margin-bottom: 10px; /* Add spacing below the heading */
 }
 
-
 .history img {
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
-    top: 50%;
+    display: block;
     width: 100px;
-    height: 75px;
-    vertical-align: middle;
-    position: absolute; 
-    right: 50%; 
+    height: auto;
     margin: 0 auto;
 }
 
-
 .history p {
-    display: inline-block;
-    vertical-align: middle;
     color: var(--accent1-color); /* Use accent color for paragraph */
     font-family: var(--paragraph-font);
     text-align: left; /* Align paragraph text to the left */
     clear: both;
 }
-
 
 /* Styling the Adventure section */
 .adventure-images {
@@ -144,4 +133,59 @@ footer .sociallinks a {
 footer .sociallinks img {
     width: 30px; /* Set the width of social media icons */
     height: 30px; /* Set the height of social media icons */
+}
+
+/* Additional styles for contact.html */
+
+/* Styling the employee profiles section */
+.employee-profiles {
+    margin-top: 50px; /* Add some spacing above the employee profiles section */
+    text-align: center; /* Align employee profiles to the center */
+}
+
+.employee-profiles figure {
+    margin-bottom: 20px; /* Add spacing between employee profile figures */
+}
+
+.employee-profiles img {
+    border-radius: 50%; /* Make employee profile images circular */
+}
+
+.employee-profiles figcaption {
+    font-style: italic; /* Italics for employee profile captions */
+}
+
+/* Styling the contact form */
+.contact-form {
+    margin-top: 50px; /* Add some spacing above the contact form */
+}
+
+.contact-form label {
+    display: block; /* Ensure labels are displayed on their own lines */
+    margin-bottom: 10px; /* Add spacing between form elements */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%; /* Make text input fields and textarea full-width */
+    padding: 10px; /* Add padding to text input fields and textarea */
+    margin-bottom: 20px; /* Add spacing between form elements */
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 10px; /* Add spacing between radio buttons */
+}
+
+.contact-form input[type="submit"] {
+    background-color: var(--primary-color); /* Use primary color for submit button background */
+    color: white; /* Set text color to contrast with the background */
+    padding: 10px 20px; /* Add padding to submit button */
+    border: none; /* Remove border */
+    cursor: pointer; /* Set cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: var(--secondary-color); /* Change background color on hover */
 }
