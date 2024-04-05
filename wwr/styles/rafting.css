@@ -23,6 +23,8 @@
     top: 50px;
     right: 150px;
     color: #FFFFFF;
+    font-size: 3rem; /* Adjust font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .hero article {
@@ -82,6 +84,9 @@
     height: 30px;
 }
 
+.sociallinks a {
+    margin: 0 5px; /* Adjusted margin for social links */
+}
 /* Styling the Meet Our Team section */
 .employee-profiles h2 {
     position: relative;
@@ -122,10 +127,12 @@
 .contact-info-section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around; /* Optional: Center the items horizontally */
+    margin: 50px 0;
 }
 
 .contact-info {
-    flex: 0 0 calc(50% - 20px); 
+    flex: 0 0 calc(50% - 20px); /* Adjusted width for contact info */
     padding: 10px;
     background-color: #fff;
     border-radius: 10px;
@@ -136,6 +143,7 @@
     flex: 0 0 calc(50% - 20px); 
     margin-top: 20px;
     margin-left: 30px;
+    height: 450px;
 }
 
 .map-container iframe {
@@ -151,34 +159,34 @@
     background-color: #fff;
     border-radius: 10px;
     margin-bottom: 20px;
+    max-width: 600px; /* Set a max-width to prevent the form from stretching too wide */
+    margin: 0 auto; /* Center the form horizontally */
 }
 
 .contact-form label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Reduce margin between labels */
     color: var(--primary-color);
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 100%;
+    width: calc(100% - 22px); /* Adjusted width to account for padding and border */
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
-.contact-form input[type="radio"] {
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
     margin-right: 5px;
 }
 
 .contact-form textarea {
+    width: calc(100% - 22px); /* Adjusted width to account for padding and border */
     resize: none;
-}
-
-.contact-form input[type="checkbox"] {
-    margin-right: 5px;
 }
 
 .contact-form input[type="submit"] {
@@ -188,8 +196,10 @@
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin: 0 auto;
     display: block;
+    margin: 0 auto; 
+    width: 100%;
+    margin-top: 10px; 
 }
 
 .contact-form input[type="submit"]:hover {
