@@ -139,6 +139,19 @@
     margin-bottom: 20px;
 }
 
+.contact-info-section h2 {
+    color: var(--primary-color); /* Change color as needed */
+    font-family: var(--heading-font); /* Adjust font family */
+    margin-bottom: 20px; /* Adjust margin */
+    text-align: center; /* Center the text */
+}
+
+.contact-info-section h3 {
+    color: var(--primary-color); /* Change color as needed */
+    font-family: var(--heading-font); /* Adjust font family */
+    margin-bottom: 10px; /* Adjust margin */
+}
+
 .map-container {
     flex: 0 0 calc(50% - 20px); 
     margin-top: 20px;
