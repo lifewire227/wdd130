@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Rapid Rides Rafting Co.</title>
+    <title>Contact Rapid Rides Rafting Co.</title>
+    <meta name="description" content="Contact Rapid Rides Rafting Co. for inquiries, reservations, or suggestions. Reach out to us for an unforgettable white water rafting experience!">
     <link rel="stylesheet" href="styles/rafting.css">
-    <meta name="description" content="Contact Rapid Rides Rafting Co. for exhilarating white water rafting adventures. Address: 16 Ngene Street, Amawbia, Awka South LGA, Anambra State. Phone: +2349049949608. Email: lifewire227@gmail.com">
     <meta name="author" content="Nkwado Chukwuka Onwughalu">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
             <img src="images/logo.jpg" alt="White Water Rafting Logo">
         </div>
-        <nav>
+        <nav class="nav">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="trips.html">Trips</a>
@@ -21,45 +21,75 @@
         </nav>
     </header>
     <main>
+        <div class="hero">
+            <img src="images/hero.jpg" alt="Hero Image">
+            <h1>Rapid Rides Rafting Co.</h1>
+            <article>
+                <h2>Our Commitment to Excellence</h2> <!-- Article heading -->
+                <img src="images/happy_customer.jpg" alt="Happy Customer">
+                <p>At Rapid Rides, we pledge to provide exhilarating adventures, forging unforgettable memories amidst the wild rivers.</p>
+            </article>
+        </div>
+        <section class="contact-info-section">
+            <div>
+                <h1>Contact Us</h1>
+                <h2>Company Information</h2>
+                <p><strong>Address:</strong> 16 Ngene street Amawbia, Awka south Local Government Anambra State</p>
+                <p>Phone: <a href="tel:+2349049949608">+2349049949608</a></p>
+                <p>Email: <a href="mailto:lifewire227.com">lifewire227.com</a></p>
+             </div>
+            <div class="map-container">
+                <!-- Embed Google Map Here -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.492532619797!2d7.056845673727615!3d6.198563326856659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104382d1c69554c3%3A0xfbf1c13837ee57eb!2sNgene%20St%2C%20Awka%20South%20420103%2C%20Anambra!5e0!3m2!1sen!2sng!4v1711857084772!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
         <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
             <figure>
-                <img src="images/employee1.jpg" alt="Employee 1">
-                <figcaption>John Doe<br>White Water Rafting Guide</figcaption>
+                <img src="images/john khan.jpg" alt="Employee 1">
+                <figcaption>John khan - Rafting Guide</figcaption>
             </figure>
             <figure>
-                <img src="images/employee2.jpg" alt="Employee 2">
-                <figcaption>Jane Smith<br>Adventure Coordinator</figcaption>
+                <img src="images/mary Jane.jpg" alt="Employee 2">
+                <figcaption>Mary Jane - Safety Officer</figcaption>
             </figure>
             <figure>
-                <img src="images/employee3.jpg" alt="Employee 3">
-                <figcaption>Michael Johnson<br>River Safety Expert</figcaption>
+                <img src="images/janeth johnson.jpg" alt="Employee 3">
+                <figcaption>janeth Johnson - Trip Coordinator</figcaption>
             </figure>
         </section>
+
         <section class="contact-form">
             <h2>Contact Us</h2>
-            <form action="#" method="post">
+            <form action="#" method="POST">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
+                <input type="text" id="name" name="name" required><br><br>
+
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label>Purpose of Message:</label>
-                <label for="inquiry"><input type="radio" id="inquiry" name="purpose" value="Inquiry" required> General Inquiry</label>
-                <label for="reservation"><input type="radio" id="reservation" name="purpose" value="Reservation" required> Reservation Question</label>
-                <label for="suggestion"><input type="radio" id="suggestion" name="purpose" value="Suggestion" required> Website Suggestion</label>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <label><input type="checkbox" name="subscribe" value="subscribe"> Please subscribe me to the monthly newsletter</label>
-                
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="purpose">Purpose of Message:</label><br>
+                <input type="radio" id="general" name="purpose" value="General Inquiry">
+                <label for="general">General Inquiry</label><br>
+                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                <label for="reservation">Reservation Question</label><br>
+                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                <label for="suggestion">Website Suggestion</label><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label><br><br>
+            <div class=".contact-form input">
                 <input type="submit" value="Submit">
+            </div>
             </form>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Rapid Rides Rafting Co. | Designed by Nkwado Chukwuka Onwughalu</p>
+    <footer class="footer">
+        <p>&copy; 2024 Rapid Rides Rafting Co. | Designed by Nkwado Chukwuka Onwughalu | <a href="link_to_wireframe.pdf">Wireframe</a></p>
         <nav class="sociallinks">
             <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
             <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>

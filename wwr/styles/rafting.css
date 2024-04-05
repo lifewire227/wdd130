@@ -1,5 +1,5 @@
-/* CSS Grid for the header */
-header {
+/* Common Styles */
+.header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
@@ -7,40 +7,15 @@ header {
     background-color: var(--nav-background-color);
 }
 
-/* Styling the logo */
-header img {
-    width: 100px;
-    height: auto;
-}
-
-/* CSS Flex for navigation */
-nav {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: auto;
-}
-
-nav a {
-    margin-left: 20px;
-    color: var(--nav-link-color);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--nav-hover-link-color);
-    text-decoration: underline;
-}
-
-/* Styling the hero section */
 .hero {
     position: relative;
+    min-height: min-content;
 }
 
 .hero img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100vh;
 }
 
 .hero h1 {
@@ -66,126 +41,157 @@ nav a:hover {
     height: 100px;
 }
 
-/* Styling the History section */
-.history {
-    position: relative;
-    padding: 20px;
-    background-color: #f7f7f7; /* Light gray background color */
-    border-radius: 10px; /* Rounded corners for visual appeal */
-    margin-bottom: 20px; /* Add some spacing between sections */
-}
-
-.history h2 {
-    color: var(--primary-color); /* Use primary color for heading */
-    font-family: var(--heading-font);
-    margin-bottom: 10px; /* Add spacing below the heading */
-}
-
-.history img {
-    display: block;
+.logo img {
     width: 100px;
     height: auto;
-    margin: 0 auto;
 }
 
-.history p {
-    color: var(--accent1-color); /* Use accent color for paragraph */
-    font-family: var(--paragraph-font);
-    text-align: left; /* Align paragraph text to the left */
-    clear: both;
-}
-
-/* Styling the Adventure section */
-.adventure-images {
+.nav {
     display: flex;
-    overflow-x: auto;
+    justify-content: flex-start;
+    margin-left: auto;
 }
 
-.adventure-images figure {
-    margin-right: 20px; /* Add spacing between images */
+.nav a {
+    margin-left: 20px;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.adventure-images img {
-    max-width: 100%; /* Ensure images don't exceed container width */
-    height: auto; /* Maintain aspect ratio */
+.nav a:hover {
+    color: var(--nav-hover-link-color);
+    text-decoration: underline;
 }
 
-.adventure-images figcaption {
-    margin-top: 10px; /* Add spacing above captions */
-    font-style: italic; /* Italics for captions */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-/* Styling the footer */
-footer {
-    background-color: var(--primary-color); /* Use the primary color defined in the root */
-    color: white; /* Set text color to contrast with the background */
-    padding: 20px; /* Add some padding for better visual appearance */
-    display: flex; /* Use flexbox layout */
-    justify-content: flex-end; /* Align items to the right */
-    align-items: center; /* Align items vertically */
+.footer .sociallinks a {
+    margin-left: 10px;
 }
 
-/* Styling the social media icons */
-footer .sociallinks a {
-    margin-left: 10px; /* Add some spacing between social links */
+.footer .sociallinks img {
+    width: 30px;
+    height: 30px;
 }
 
-footer .sociallinks img {
-    width: 30px; /* Set the width of social media icons */
-    height: 30px; /* Set the height of social media icons */
+/* Styling the Meet Our Team section */
+.employee-profiles h2 {
+    position: relative;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-/* Additional styles for contact.html */
-
-/* Styling the employee profiles section */
 .employee-profiles {
-    margin-top: 50px; /* Add some spacing above the employee profiles section */
-    text-align: center; /* Align employee profiles to the center */
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    border-radius: 0;
+    justify-content: center;
 }
 
 .employee-profiles figure {
-    margin-bottom: 20px; /* Add spacing between employee profile figures */
+    margin-bottom: 20px;
+    display: inline-block;
 }
 
 .employee-profiles img {
-    border-radius: 50%; /* Make employee profile images circular */
+    display: block;
+
+    width: 300px;
+    height: auto;
+    border-radius: 0;
+    margin-right: 10px;
+    justify-content: center;
 }
 
 .employee-profiles figcaption {
-    font-style: italic; /* Italics for employee profile captions */
+    font-style: italic;
 }
 
-/* Styling the contact form */
+
+.contact-info-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 0 0 calc(50% - 20px); /* Adjusted width for contact info */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    flex: 0 0 calc(50% - 20px); /* Adjusted width for map container */
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%; /* Make iframe width 100% of its container */
+    height: 450px; /* Adjust the height as needed */
+    border: none; /* Remove iframe border */
+}
+
+
 .contact-form {
-    margin-top: 50px; /* Add some spacing above the contact form */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .contact-form label {
-    display: block; /* Ensure labels are displayed on their own lines */
-    margin-bottom: 10px; /* Add spacing between form elements */
+    display: block;
+    margin-bottom: 10px;
+    color: var(--primary-color);
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 100%; /* Make text input fields and textarea full-width */
-    padding: 10px; /* Add padding to text input fields and textarea */
-    margin-bottom: 20px; /* Add spacing between form elements */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 .contact-form input[type="radio"] {
-    margin-right: 10px; /* Add spacing between radio buttons */
+    margin-right: 5px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form input[type="checkbox"] {
+    margin-right: 5px;
 }
 
 .contact-form input[type="submit"] {
-    background-color: var(--primary-color); /* Use primary color for submit button background */
-    color: white; /* Set text color to contrast with the background */
-    padding: 10px 20px; /* Add padding to submit button */
-    border: none; /* Remove border */
-    cursor: pointer; /* Set cursor to pointer on hover */
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    background-color: #376fa7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: var(--secondary-color); /* Change background color on hover */
+    background-color: var(--primary-hover-color);
 }
