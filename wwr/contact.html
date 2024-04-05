@@ -32,12 +32,12 @@
         </div>
         <section class="contact-info-section">
             <div>
-                <h1>Contact Us</h1>
-                <h2>Company Information</h2>
+                <h2>Contact Us</h2> <!-- Adjusted to h2 -->
+                <h3>Company Information</h3> <!-- Adjusted to h3 -->
                 <p><strong>Address:</strong> 16 Ngene street Amawbia, Awka south Local Government Anambra State</p>
                 <p>Phone: <a href="tel:+2349049949608">+2349049949608</a></p>
                 <p>Email: <a href="mailto:lifewire227.com">lifewire227.com</a></p>
-             </div>
+            </div>
             <div class="map-container">
                 <!-- Embed Google Map Here -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.492532619797!2d7.056845673727615!3d6.198563326856659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104382d1c69554c3%3A0xfbf1c13837ee57eb!2sNgene%20St%2C%20Awka%20South%20420103%2C%20Anambra!5e0!3m2!1sen!2sng!4v1711857084772!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -47,15 +47,15 @@
         <section class="employee-profiles">
             <h2>Meet Our Team</h2>
             <figure>
-                <img src="images/john khan.jpg" alt="Employee 1">
+                <img src="images/john_khan.jpg" alt="Employee-1">
                 <figcaption>John khan - Rafting Guide</figcaption>
             </figure>
             <figure>
-                <img src="images/mary Jane.jpg" alt="Employee 2">
+                <img src="images/mary_Jane.jpg" alt="Employee 2">
                 <figcaption>Mary Jane - Safety Officer</figcaption>
             </figure>
             <figure>
-                <img src="images/janeth johnson.jpg" alt="Employee 3">
+                <img src="images/janeth_johnson.jpg" alt="Employee 3">
                 <figcaption>janeth Johnson - Trip Coordinator</figcaption>
             </figure>
         </section>
@@ -69,22 +69,23 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
 
-                <label for="purpose">Purpose of Message:</label><br>
-                <input type="radio" id="general" name="purpose" value="General Inquiry">
-                <label for="general">General Inquiry</label><br>
-                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-                <label for="reservation">Reservation Question</label><br>
-                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-                <label for="suggestion">Website Suggestion</label><br><br>
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <input type="radio" id="general" name="purpose" value="General Inquiry">
+                    <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label><br><br>
+                </fieldset>
 
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
 
                 <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
                 <label for="subscribe">Please subscribe me to the monthly newsletter</label><br><br>
-            <div class=".contact-form input">
+
                 <input type="submit" value="Submit">
-            </div>
             </form>
         </section>
     </main>
