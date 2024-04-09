@@ -179,14 +179,15 @@
 
 .contact-form label {
     display: block;
-    margin-bottom: 5px; /* Reduce margin between labels */
+    margin-bottom: 5px; 
     color: var(--primary-color);
 }
 
+/* Adjusted width to account for padding and border */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: calc(100% - 22px); /* Adjusted width to account for padding and border */
+    width: calc(100% - 22px); 
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -226,4 +227,55 @@
 
 .contact-form button[type="submit"]:hover {
     background-color: var(--primary-hover-color);
+}
+
+.trip-description {
+    display: flex;
+    
+    
+}
+
+h2 {
+    text-align: center;
+}
+ h3 {
+    text-align: center;
+}
+
+.images {
+width: 300px;
+
+}
+
+.trip-table {
+    margin: 10px;
+}
+
+.trip-table h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.trip-table table {
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.trip-table th, .trip-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: #f2f2f2;
+}
+
+.trip-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.trip-table tbody tr:hover {
+    background-color: #ddd;
 }
