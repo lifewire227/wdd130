@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Rapid Rides Rafting Co.</title>
+    <meta name="description" content="Contact Rapid Rides Rafting Co. for inquiries, reservations, or suggestions. Reach out to us for an unforgettable white water rafting experience!">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="author" content="Nkwado Chukwuka Onwughalu">
+    <style>
+        /* Additional styles for full-width image */
+        .hero-image {
+            background-image: url('images/mary_Jane.jpg'); /* Replace 'hero-image.jpg' with your image file */
+            background-size: cover;
+            background-position: center;
+            height: 400px; /* Adjust height as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff; /* Text color */
+            text-align: center;
+        }
+        .hero-image h1 {
+            font-size: 2.5em; /* Adjust font size as needed */
+            margin-bottom: 20px;
+        }
+
+        /* Newsletter Section */
+.newsletter {
+  background-color: var(--accent2-color); /* Mint or pale aqua */
+  padding: 2rem;
+  text-align: center;
+}
+
+.newsletter h2 {
+  margin-bottom: 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Spacing between form elements */
+}
+
+.newsletter label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.newsletter button {
+  background-color: var(--primary-color); /* Navy blue */
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: var(--accent1-color); /* Olive brown or military green */
+}
+
+.hero-text {
+  position: relative; /* Position text relative to hero image */
+  bottom: 10px;
+  text-align: center;
+}
+
+.call-to-action {
+  display: inline-block; /* Allow button styling without breaking layout */
+  margin: 0 auto; /* Center the button horizontally within its container */
+  background-color: var(--primary-color); /* Navy blue */
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from text */
+}
+
+.cta img {
+  height: 600px; /* Adjust height as needed */
+  width: 100%; /* Set width to 100% for full container width */
+}
+
+.call-to-action:hover {
+  background-color: var(--accent1-color); /* Olive brown or military green */
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Create flexible grid with minimum 300px width for items */
+  grid-gap: 20px; /* Set spacing between grid items */
+  margin: 40px; /* Add a margin around the grid */
+}
+
+.grid-item {
+  text-align: center; /* Center text content within grid items */
+}
+
+.grid-item img {
+  width: 100%; /* Ensure images take full width of grid items */
+  height: 250px; /* Set image height, adjust as needed */
+  object-fit: cover; /* Maintain aspect ratio and fill available space */
+}
+
+@media (min-width: 768px) { /* Adjust grid layout for medium screens and up */
+  .grid-layout {
+    grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+  }
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #376fa7; 
+    color: #ffffff;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.footer a:hover {
+    color: var(--accent1-color); /* Olive brown or military green */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-left: 10px;
+}
+
+.social-icons a:first-child {
+  margin-left: 0;
+}
+
+/* Font styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Use Roboto font for the entire document */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font); /* Use Times New Roman for headings */
+}
+
+p {
+  font-family: var(--paragraph-font); /* Use Arial for paragraphs */
+}
+
+/* Navigation styles */
+.nav {
+  background-color: var(--nav-background-color); /* White */
+}
+
+.nav a {
+  color: var(--nav-link-color); /* Dark gray */
+}
+
+.nav a:hover {
+  color: var(--nav-hover-link-color); /* Blue */
+  background-color: var(--nav-hover-background-color); /* Light gray */
+}
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <img src="images/logo.jpg" alt="White Water Rafting Logo">
+    </div>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+    <main>
+        <section class="hero-image">
+            <!-- Full-width image and heading message -->
+            <div>
+                <h1>Welcome to White Water Rafting Adventures</h1>
+            </div>
+        </section>
+        
+        <section class="newsletter">
+            <h2> Newsletter sign up form </h2>
+            <form action="submit_form.php" method="post"> <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+              </form>
+        </section>
+         
+        <h2> Book Your Adventure Now!</h2>
+        <section class="cta">
+            <img src="images/water_rafting_office.jpg" alt="Rafting Hero Image">
+            <div class="hero-text">
+              <h1>Unleash Your Wild Side: Go Rafting!</h1>
+              <p>Experience heart-pounding rapids, breathtaking scenery, and unforgettable thrills on a whitewater rafting adventure.</p>
+              <a href="trips.html" class="call-to-action">Book Your Trip Now!</a>
+            </div>
+          </section>
+          
+
+        
+          <h2>Happy Voyagers</h2>
+          <section class="grid-layout">
+            <div class="grid-item">
+              <img src="images/janeth_johnson.jpg" alt="janeth johnson">
+              <h2>Challenge Yourself: Conquer the Rapids!</h2> 
+              <p> Join Janeth and experience the thrilling world of whitewater rafting.</p>
+            </div>
+            <div class="grid-item">
+              <img src="images/john_khan.jpg" alt="John khan">
+              <h2>Janeth Says: "The rafting trip was unforgettable!</h2>
+              <p> The guides were fantastic, and the scenery was breathtaking."</p>
+            </div>
+            <div class="grid-item">
+              <img src="images/white_water_rafting4.jpg" alt="Whitewater Rafting Action">
+              <h2>Test Your Limits: Challenge Yourself on Whitewater!</h2>
+              <p>Experience the adrenaline rush of whitewater rapids!</p>
+            </div>
+            <div class="grid-item">
+              <img src="images/trip_description.jpg" alt="Scenic Rafting Adventure">
+              <h2> Unforgettable Excitement: Awe-Inspiring Rafting Adventures!</h2>
+              <p>Enjoy breathtaking scenery on our peaceful rafting tours.</p>
+            </div>
+            <div class="grid-item">
+              <img src="images/happy_customer.jpg" alt="Happy Voyager">
+              <h2>Create Lasting Memories: Family Rafting Fun!</h2>
+              <p>John and his family share an exciting adventure on our family-friendly rafting trip.</p>
+            </div>
+            <div class="grid-item">
+              <img src="images/mary_Jane.jpg" alt="Happy Family">
+              <h2>Experienced Guides Ensure a Thrilling Ride! </h2>
+              <p>John and his family share an exciting adventure on our family-friendly rafting trip</p>
+            </div>
+          </section>
+          
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Rapid Rides Rafting Co. | Designed by Nkwado Chukwuka Onwughalu | <a href="images/wireframe-index.html.jpg">Wireframe</a></p>
+      <nav class="sociallinks">
+          <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+          <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+          <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+      </nav>
+  </footer>
+</body>
+</html>
